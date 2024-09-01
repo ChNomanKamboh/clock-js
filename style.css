@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Background{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    z-index: -1;
+    background-image:url(https://media.istockphoto.com/id/1499681935/vector/red-digital-glowing-numbers-for-lcd-electronic-devices-screen-isolated-on-black-background.jpg?s=612x612&w=0&k=20&c=tk1YdD3-ijzkD-3t4aXk1xDQChY9EiU3LGe8b-B7BBY=);
+}
+.Clock{
+    position:absolute;
+    border: 2px solid gray;
+    height: 25%;
+    width: 30%;
+    /* margin:  100px auto; */
+    right:30px;
+    bottom:30px;
+    border-right: 40px;
+    border-left: 40px;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.397);
+    background-color:rgba(44, 64, 67, 0.473);
+    transition: 0.5s;
+    /* transform:rotatex(15deg); */
+    /* transform: skew(-15deg); */
+}
+:hover.Clock{
+    background-color: #3e4444a9;
+    cursor: pointer;
+    transition: 0.5s;
+    /* transform: skew(0deg); */
+    transform:rotatex(-15deg);
+    box-shadow: 2px 2px 10px black; 
+}
+.time{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 40px;
+    color: transparent;
+    text-shadow: 0px 0px 20px #6b5b95;
+    -webkit-text-stroke: 1px white;  
+}
+.AM{
+    color: transparent;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:right;
+    margin-right: 20px;
+    margin-top: 0px;
+    text-shadow: 0px 0px 20px #6b5b95;
+    -webkit-text-stroke: 0.5px white;  
+    font-weight: bold;
+}
+.Clock:hover .AM{
+    color:transparent;
+    text-shadow: 0px 0px 20px #b2ad7f;
+    -webkit-text-stroke: 0.5px white; 
+}
+.Clock:hover h1{
+    color: transparent;
+    text-shadow: 0px 0px 20px #b2ad7f;
+    -webkit-text-stroke: 0.5px white; 
+}
+.Date{
+    position: absolute;
+    bottom:40%;
+    right:30px;
+    font-size: 50px;
+    height: 9.4%;
+    width: 30%;
+    text-align: center;
+    background-color:rgba(44, 64, 67, 0.473);
+    transition: 0.5s;
+    /* transform:rotatex(15deg); */
+    /* transform: skew(-15deg); */
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.5s;
+    border: 2px solid gray;
+    color: transparent;
+    text-shadow: 0px 0px 20px #6b5b95;
+    -webkit-text-stroke: 0.5px white; 
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.397);
+    border-right: 40px;
+    border-left: 40px;
+}
+:hover.Date{
+    background-color: #2861612d;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: skew(0deg);
+    transform:rotatex(-15deg);
+    box-shadow: 2px 2px 10px black; 
+    color: transparent;
+    text-shadow: 0px 0px 20px #c0b767;
+    -webkit-text-stroke: 0.5px white; 
+}
+h1{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 30px;
+    color: transparent;
+    text-shadow: 0px 0px 15px cadetblue;
+    -webkit-text-stroke: 1px rgba(255, 217, 0, 0.76);
+    font-style: italic;   
+} 
